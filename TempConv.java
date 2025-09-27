@@ -8,9 +8,9 @@ public class TempConv {
         System.out.println("Temperaure Converter");
         Scanner tempInput = new Scanner(System.in);
         System.out.print("Enter Temperature In Fahrenheit: ");
-        
-        // The conversion occurs here.
         double tempFahren = tempInput.nextDouble();
+
+        // The conversion occurs here.
         double tempCelsius = (5.0 / 9.0 )*(tempFahren - 32);
 
         // This rounds the celsius value to 2 decimal places.
@@ -19,6 +19,7 @@ public class TempConv {
         // Prints the rounded celsius value.
         System.out.println("Temperature in Celsius = " + roundCelsius );
 
+        // Closes the scanner to avoid memory leaks.
         tempInput.close();
     }
 }
