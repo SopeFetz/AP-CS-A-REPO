@@ -47,6 +47,7 @@ public class MathTutor {
 
         // Informs the user of the program's purpose.
         System.out.println("Hey I'm your maths tutor for the day and I'll be asking you some questions");
+        System.out.println("Questions should be answered with integers only");
 
         // This enables us to carry out the follow up question for division and prompt the user for an answer.
         if ( randOperator != '/'){
@@ -58,7 +59,7 @@ public class MathTutor {
             System.out.println("What is the solution to this problem:\n" + larger + " " + randOperator + " " + smaller );
             System.out.print("Enter your answer: ");
             answer = userInput.nextInt();
-            System.out.println("Try this too:\n" + larger + " " + "mod(" + smaller + ")");
+            System.out.println("Try this too:\n" + "What is the remainder when " + larger + " is divided by " + smaller + " ?");
             System.out.print("Enter your answer: ");
             extraAnswer = userInput.nextInt();
         }
