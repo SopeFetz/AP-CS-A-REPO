@@ -23,16 +23,8 @@ public class MathTutor {
         extraResult = 0;
 
         // Determines which of the two numbers is larger to have answers > 0.
-        if (num1 > num2){
-            larger = num1;
-            smaller = num2;
-        } else if (num1 < num2){
-            larger = num2;
-            smaller = num1;
-        } else {
-            larger = num1;
-            smaller = num2;
-        }
+        larger = Math.max(num1, num2);
+        smaller = Math.min(num1, num2);
         
         // Performs the operation based on the randomly selected operator.
         if ( randOperator == '+' ) {
